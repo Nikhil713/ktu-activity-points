@@ -18,12 +18,14 @@ require('controllers/admin.php');
 require('controllers/home.php');
 require('controllers/add.php');
 require('controllers/password.php');
+require('controllers/superadmin.php');
 
 require('modals/login.php');
 require('modals/admin.php');
 require('modals/home.php');
 require('modals/add.php');
 require('modals/password.php');
+require('modals/superadmin.php');
 
 $bootstrap = new Bootstrap($_GET);
 $controller = $bootstrap->createController();
