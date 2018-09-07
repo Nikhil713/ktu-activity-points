@@ -23,7 +23,7 @@
     <div class="row">
         
         <div class="col-12 cent" style="margin-bottom: 5px;">
-            <a class="btn btn-primary btn-lg" style="width: 200px; margin-right: 5px;" href="<?php echo ROOTPATH; ?>?controller=admin&action=pending">Add Teachers</a>
+            <a class="btn btn-primary btn-lg" style="width: 200px; margin-right: 5px;" href="<?php echo ROOTPATH; ?>?controller=superadmin&action=addteachers">Add Teachers</a>
             <a class="btn btn-primary btn-lg" style="width: 200px;" href="<?php echo ROOTPATH; ?>?controller=admin&action=classList">View Teachers</a>
         </div>
 
@@ -33,7 +33,7 @@
 
         <div class="col-12 cent">
             <a class="btn btn-primary btn-lg" style="width: 200px; margin-right: 5px;" href="<?php echo ROOTPATH; ?>?controller=admin&action=queries">Delete Teachers</a>
-            <a class="btn btn-primary btn-lg" style="width: 200px;" href="<?php echo ROOTPATH; ?>?controller=admin&action=userCreation">User Creation</a>
+            <a class="btn btn-primary btn-lg" style="width: 200px;" disabled>None</a>
         </div>
 
     </div>

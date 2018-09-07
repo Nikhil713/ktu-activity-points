@@ -7,6 +7,11 @@ class SuperadminModel extends Model {
 	}
 
 
+	public function addteachers() {
+
+
+		return;
+	}
 
 
 

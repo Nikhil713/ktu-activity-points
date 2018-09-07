@@ -24,4 +24,11 @@ class Superadmin extends Controller {
 		
 	}
 
+	protected function addteachers() {
+
+		$viewmodel = new SuperadminModel();
+		$this->returnView($viewmodel->addteachers(), true);	
+
+	}
+
 }
