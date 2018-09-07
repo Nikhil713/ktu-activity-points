@@ -63,7 +63,8 @@ CREATE TABLE `Admins` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `Admins` (`username`, `password`, `Class`) VALUES
-('CS17B0', 'pass', 'CS17B');
+('CS17B0', 'pass', 'CS17B'),
+('sadmin', 'pass', '');
 
 4. In assets folder, create a folder named 'Documents' (D must be capital). Then try 'sudo chmod 777 Documents' while in the assets folder.
 
