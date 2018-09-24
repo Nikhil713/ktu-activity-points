@@ -71,3 +71,7 @@ INSERT INTO `Admins` (`username`, `password`, `Class`) VALUES
 5. You are up and running!
 
 *Note: You might need to set 'file_uploads = On' in your php.ini file*
+
+###Further Changes to SQL tables
+
+ALTER TABLE `users` ADD `Name` TEXT NOT NULL AFTER `Username`;

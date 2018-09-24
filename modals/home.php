@@ -36,6 +36,7 @@ class HomeModel extends Model {
 		$_SESSION['rollno'] = $row['RollNo'];
 		$_SESSION['admno'] = $row['AdmNo'];
 		$_SESSION['class'] = $row['Class'];
+		$_SESSION['name'] = $row['Name'];
 
 		$post  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
@@ -57,13 +58,18 @@ class HomeModel extends Model {
 				return;
 			}
 
+			if(strlen($post['name']) < 4) {
+				Messages::setMsg("Insert proper name", 'error');
+				return;
+			}
 /*			if(strlen($post['class']) != 5) {
 				Messages::setMsg("Invalid Class information", 'error');
 				return;
 			}
 */
-			$this->query('UPDATE `users` SET `RegisterNo` = :register, `RollNo` = :rollno, `AdmNo` = :admno, `InfoUpdate` = :infoupdate WHERE `users`.`username` = :user;');
+			$this->query('UPDATE `users` SET `Name` = :name, `RegisterNo` = :register, `RollNo` = :rollno, `AdmNo` = :admno, `InfoUpdate` = :infoupdate WHERE `users`.`username` = :user;');
 
+			$this->bind(':name', $post['name']);
 			$this->bind(':register', $post['register']);
 			$this->bind(':rollno', $post['rollno']);
 			$this->bind(':admno', $post['admno']);

@@ -11,6 +11,13 @@
 
 			<div class="form-group">
 
+                <label class="col-form-label">Full Name:</label>
+                <input type="text" name="name" class="form-control" value="<?php echo $_SESSION['name']; ?>">
+
+            </div>
+
+            <div class="form-group">
+
                 <label class="col-form-label">Register No:</label>
                 <input type="text" name="register" class="form-control" value="<?php echo $_SESSION['register']; ?>">
                 <small class="text-muted">Eg: MDL17CS013</small>
